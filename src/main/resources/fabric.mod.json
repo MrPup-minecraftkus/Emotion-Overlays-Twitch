@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "emotion_overlays_twitch",
+	"version": "${version}",
+	"name": "Emotion Overlays: Twitch",
+	"description": "Adds emojis from Twitch and 7tv to the Emotion Overlays mod ❤",
+	"authors": [
+		"MrPup(minecraftkus)"
+	],
+	"contact": {
+		"sources": "https://github.com/MrPup-minecraftkus/Emotion-Overlays-Twitch"
+	},
+	"license": "MIT",
+	"icon": "assets/emotion_overlays_twitch/emojis_twitch_logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mrpup.emotion_overlays_twitch.EmotionOverlaysTwitch"
+		],
+		"client": [
+			"com.mrpup.emotion_overlays_twitch.client.EmotionOverlaysTwitchClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+        "emotion_overlays": "*"
+	}
+}
