@@ -27,11 +27,16 @@ sourceSets.main.resources {
 }
 
 repositories {
-    // Add here additional repositories if required by some of the dependencies below.
+    maven {
+        url "https://cursemaven.com"
+    }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 base {
-    archivesName = mod_id
+    archivesName = "${mod_id}-neoforge-${minecraft_version}"
 }
 
 // Mojang ships Java 21 to end users in 1.21.1, so mods should target Java 21.
@@ -118,7 +123,8 @@ configurations {
 }
 
 dependencies {
-    implementation "com.mrpup.emotion_overlays:emotion_overlays-neoforge-1.21.1"
+   // implementation "curse.maven:emotion-overlays-1539677:8070302"
+    implementation files('libs/emotion_overlays-neoforge-1.21.1-1.2.0.jar')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

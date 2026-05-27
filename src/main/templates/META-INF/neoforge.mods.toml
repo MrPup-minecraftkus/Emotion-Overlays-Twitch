@@ -84,6 +84,6 @@ logoFile="emojis_twitch_logo.png"
 [[dependencies.${mod_id}]]
     modId="emotion_overlays"
     type="required"
-    versionRange="*"
+    versionRange="[1.2.0,)"
     ordering="NONE"
     side="BOTH"
